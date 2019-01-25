@@ -1,23 +1,31 @@
 {
-  "name": "zabbix_api",
+  "name": "apidelfos",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/dahsser/unimap/issues"
+  },
+  "homepage": "https://gitlab.com/dahsser/unimap#README",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "easy-soap-request": "^2.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
     "mysql": "^2.16.0",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
-    "passport-local": "^1.0.0",
-    "xml2js": "^0.4.19",
-    "zabbix-node": "^0.2.0"
+    "passport-local": "^1.0.0"
   }
 }

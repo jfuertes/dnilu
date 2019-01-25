@@ -1,16 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const passport = require('passport');
 
 const authenticateController = require('../controllers/authenticateController');
 
 const authenticateRouter = express.Router();
 authenticateRouter.use(bodyParser.json());
 
-authenticateRouter.route('/')
+authenticateRouter.route('/login')
     .get(authenticateController.get)
-    .post(passport.authenticate('local'), authenticateController.post)
+    .post(authenticateController.post)
     .put(authenticateController.put)
     .delete(authenticateController.delete);
+
+authenticateRouter.route('/checkJWTToken')
+    .get(authenticateController.checkJWTToken);
 
 module.exports = authenticateRouter;
