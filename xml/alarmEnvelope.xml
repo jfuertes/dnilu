@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://www.tmforum.org/mtop/fmw/xsd/hdr/v1" xmlns:v11="http://www.tmforum.org/mtop/rtm/xsd/ar/v1" xmlns:v12="http://www.tmforum.org/mtop/fmw/xsd/nam/v1" xmlns:v13="http://www.tmforum.org/mtop/nra/xsd/com/v1" xmlns:v14="http://www.tmforum.org/mtop/nra/xsd/prc/v1">
+   <soapenv:Header>
+      <v1:header>
+         <v1:activityName>getActiveAlarms</v1:activityName>
+         <v1:security>?u2000user?:?u2000password?</v1:security>
+         <v1:communicationPattern>SimpleResponse</v1:communicationPattern>
+         <v1:communicationStyle>RPC</v1:communicationStyle>
+      </v1:header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v11:getActiveAlarmsRequest>
+      </v11:getActiveAlarmsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
